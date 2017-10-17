@@ -1,0 +1,237 @@
+.custom_nav .navbar.navbar-fixed-top .navbar-inner{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    background-color: gray;
+}
+
+.active {
+    background-color:lightskyblue;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0px 0px 0px 35px;
+    text-decoration: none;  
+    text-shadow: 3px 3px 5px black;  
+}
+
+
+#myNavbar ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0px 15px;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px black;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: lightskyblue;
+}
+
+.parallax-main {
+    /* The image used */
+    background-image: url("../images/bells_1920.jpg");
+
+    /* Set a specific height */
+    min-height: 750px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .30;
+}
+
+#mainContent {
+    position: relative;
+}
+
+#homePage{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    color: lightskyblue;
+    margin-top: 250px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#homePage h1{
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 72px;
+    text-shadow: 3px 3px 5px black;
+}
+
+#homePage hr {
+    border: 2px solid #ffffff;
+    width: 50%;
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+#homePage p {
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px black;
+}
+
+#information{
+    position: absolute;
+    clear: both;
+    top: 20px;
+}
+
+#portImage img {
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: auto;
+    clear: both;
+}
+
+#portInfo div{
+    background: lightskyblue;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    height:600px;
+    width:100%;
+    margin: 80px 180px 0px 0px;
+    padding: 20px;
+    overflow-y: scroll;
+    opacity:.85;
+}
+
+#portExamples{
+    position: absolute;
+    clear: both;
+    top: 20px;
+}
+
+.examplesRow1 {
+    background-color: clear;
+    border-radius: 15px;
+    height:274px;
+    padding: 20px;
+    margin-top: 80px;
+    
+}
+
+.examplesRow2 {
+    background-color: clear;
+    border-radius: 15px;
+    height:274px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* .examples {
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    height: 230px;
+    width:100%;
+    text-align: center;
+}
+
+div #gts {
+    margin-top: -250px;    
+    width: 400px;
+}*/
+#example3 {
+    background-color: rgba(255, 255, 255, 0.6);  
+}
+
+.examplesRow1 img, .examplesRow2 img{
+    width: 100%;
+    border: 3px solid lightblue;
+    border-radius: 20px;
+    padding: 5px;
+
+} 
+
+
+.fa {
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+li a:hover, li a:focus {
+    text-decoration: none;
+    box-shadow: 3px 3px 5px black;
+
+}
+
+.social {
+    height: 50px;
+    width: 50px;
+    border: 2px solid lightblue;
+    box-shadow: 5px 5px 5px cyan;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    margin: 20px 10px; 
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .parallax-main {
+        min-height: 1080px; 
+    }
+
+    #portInfo div {
+        height: 460px;
+        margin: 20px 180px 0px 0px;
+    }
+
+    #portImage img {
+        width: 100%;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    
+    .examplesRow1 {
+        margin-top: -20px;
+        height: 120px;
+    }
+    
+    .examples {
+        height: 80px;
+    }
+    
+    #gts img{
+        /* position: relative; */
+        /* margin-top: -260px; */
+        width: 240px;
+        margin-left: 10px;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .parallax-main {
+        /* Set a specific height */
+        min-height: 1080px; 
+    }      
+    
+    #portInfo div{
+        height:700px;
+        overflow-y: hidden;
+
+    }
+}
