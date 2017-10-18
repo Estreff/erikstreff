@@ -116,7 +116,7 @@ nav {
 .examplesRow1 {
     background-color: clear;
     border-radius: 15px;
-    height:274px;
+    /* height:274px; */
     padding: 20px;
     margin-top: 80px;
     
@@ -125,9 +125,9 @@ nav {
 .examplesRow2 {
     background-color: clear;
     border-radius: 15px;
-    height:274px;
+    /* height:274px; */
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 
@@ -145,6 +145,7 @@ div #gts {
 }*/
 #example3 {
     background-color: rgba(255, 255, 255, 0.6);  
+    border-radius: 20px;
 }
 
 .examplesRow1 img, .examplesRow2 img{
@@ -187,32 +188,35 @@ li a:hover, li a:focus {
     }
 
     .parallax-main {
-        min-height: 1080px; 
+        min-height: 900px; 
     }
 
     #portInfo div {
-        height: 460px;
-        margin: 20px 180px 0px 0px;
+        height: 600px;
+        margin:40px 180px 0px 0px;
     }
 
     #portImage img {
+        margin-top: 100px;
         width: 100%;
     }
 
-    .col-xs-12 {
-        width: 100%;
-        margin-top: 60px;
-    }
+    #gts {
+        margin-top: 80px;
+    } 
 
-    
     .examplesRow1 {
-        margin-top: -20px;
-        height: 120px;
+        margin-top: -10px;
     }
+
+    .examplesRow2 {
+
+        /* margin-top: 20px; */
+    } 
     
-    .examples {
+    /* .examples {
         height: 80px;
-    }
+    } */
     
     #gts img{
         /* position: relative; */
@@ -226,7 +230,7 @@ li a:hover, li a:focus {
 @media (min-width: 769px) {
     .parallax-main {
         /* Set a specific height */
-        min-height: 1080px; 
+        min-height: 900px; 
     }      
     
     #portInfo div{

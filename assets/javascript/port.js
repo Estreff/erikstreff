@@ -1,4 +1,6 @@
 $(function(){
+    const mq = window.matchMedia( "(min-width: 768px)" );
+
     $('#information').addClass('hide');
     $('#portExamples').addClass('hide');
     $('#brand').addClass('hide');
@@ -14,6 +16,7 @@ $(function(){
         $('#brand').addClass('hide');
         $('#homePage').removeClass('hide');
         $('#myNavbar').collapse('hide');
+        $('.parallax-main').css('min-height', '900px');
     });
 
     $('#about').click(function(){
@@ -22,6 +25,11 @@ $(function(){
         $('#brand').removeClass('hide');
         $('#homePage').addClass('hide');
         $('#myNavbar').collapse('hide');
+        if(mq.matches) {
+            $('.parallax-main').css('height', '900px');
+        } else {
+            $('.parallax-main').css('height', '1360px');
+        }
     });
     
     $('#portfolio').click(function(){
@@ -30,5 +38,10 @@ $(function(){
         $('#brand').removeClass('hide');
         $('#homePage').addClass('hide');
         $('#myNavbar').collapse('hide');
+        if(mq.matches) {
+            $('.parallax-main').css('height', '900px');
+        } else {
+            $('.parallax-main').css('height', '1360px');
+        }
     });
 });
